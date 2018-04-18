@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- *********************** 以下为App主题颜色定义 *********************** -->
+
+    <!-- App主色调 -->
+    <color name="colorPrimary">#02A543</color>
+    <!-- App主色调 深色 -->
+    <color name="colorPrimaryDark">#0E95CB</color>
+    <!-- App主色调 浅色 -->
+    <color name="colorPrimaryLight">#A6D9EC</color>
+
+</resources>
