@@ -1,10 +1,10 @@
-package com.jack.dialogfactory;
+package com.tuo.dialogfactory;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-import com.jack.dialog_factory.DialogFactory;
+import com.tuo.customview.DialogFactory;
 
 public class MainActivity extends AppCompatActivity {
 

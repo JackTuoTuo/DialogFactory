@@ -1,4 +1,4 @@
-package com.jack.dialog_factory;
+package com.tuo.customview;
 
 import android.app.Dialog;
 import android.content.Context;
