@@ -1,4 +1,4 @@
-package com.tuo.customview;
+package com.tuo.dialogfactory;
 
 import android.app.Dialog;
 import android.content.Context;
@@ -16,7 +16,7 @@ import android.widget.TextView;
 
 
 /**
- * describe:
+ * 描述: 生成各种Dialog的工厂
  * 作者：JackTuoTuo on 2017/7/18 20:35
  * 邮箱：839539179@qq.com
  */

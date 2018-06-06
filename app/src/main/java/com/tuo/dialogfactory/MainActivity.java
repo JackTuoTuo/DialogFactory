@@ -4,7 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-import com.tuo.customview.DialogFactory;
+
 
 public class MainActivity extends AppCompatActivity {
 
