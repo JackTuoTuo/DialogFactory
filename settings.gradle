@@ -1,1 +1,1 @@
-include ':app', ':dialogfactory'
+include ':app', ':dialog_factory'
