@@ -107,7 +107,6 @@ public class DialogFactory {
             tvLeft = mContentView.findViewById(R.id.tv_left);
             tvRight = mContentView.findViewById(R.id.tv_right);
             tvContent = mContentView.findViewById(R.id.tv_content);
-            cbNoTips = mContentView.findViewById(R.id.cb_no_tips);
             setDefault();
         } else {
             tvLeft = mContentView.findViewById(R.id.tv_left);

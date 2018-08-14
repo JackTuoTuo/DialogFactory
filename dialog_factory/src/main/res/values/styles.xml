@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-
     <!-- Dialog基础样式 -->
     <style name="Dialog.Base" parent="Theme.AppCompat.Light.Dialog">
         <!--<item name="android:windowIsFloating">true</item>-->

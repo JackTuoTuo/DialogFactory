@@ -50,7 +50,7 @@ publish {
     artifactId = 'DialogFactory'
 
     //版本号
-    publishVersion = '1.0.2'
+    publishVersion = '1.0.3'
 
     //描述
     desc = 'A factory that produces dialogs of different styles.'

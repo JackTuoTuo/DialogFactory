@@ -44,23 +44,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:lineSpacingExtra="1dp"
-            android:textColor="#333333"
-            android:textSize="14sp"
-            android:textAppearance="@style/TextAppearance.AppCompat"/>
-
-        <CheckBox
-            android:id="@+id/cb_no_tips"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/tv_content"
-            android:layout_marginTop="10dp"
-            android:button="@null"
-            android:drawableLeft="@drawable/selector_checkbox_style2"
-            android:drawablePadding="5dp"
-            android:textColor="#333333"
-            android:textSize="12sp"
             android:textAppearance="@style/TextAppearance.AppCompat"
-            android:visibility="gone" />
+            android:textColor="#333333"
+            android:textSize="14sp" />
+
 
     </RelativeLayout>
 
@@ -69,11 +56,10 @@
         android:layout_width="80dp"
         android:layout_height="30dp"
         android:layout_marginTop="20dp"
-        android:background="@drawable/selector_white2btnpregrey2btndisgrey_btnpregrey_r4"
         android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat"
         android:textColor="#757575"
         android:textSize="14sp"
-        android:textAppearance="@style/TextAppearance.AppCompat"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/rl_content" />
 
@@ -82,7 +68,6 @@
         android:layout_width="80dp"
         android:layout_height="30dp"
         android:layout_marginTop="20dp"
-        android:background="@drawable/selector_primary2dark2light_r4"
         android:gravity="center"
         android:textColor="#FFFFFF"
         android:textSize="14sp"
