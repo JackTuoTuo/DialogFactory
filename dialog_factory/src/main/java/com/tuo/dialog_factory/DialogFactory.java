@@ -9,7 +9,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
-import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -35,7 +34,7 @@ public class DialogFactory {
 
     private TextView tvRight;
 
-    private CheckBox cbNoTips;
+
 
     private Context mContext;
     private String mTitle;
@@ -55,7 +54,7 @@ public class DialogFactory {
 
     private boolean mCancelable;
     private boolean mCanceledOnTouchOutside;
-    private boolean mShowNoTips; // 是否显示 不再提示的选项
+
     private String mIgnoreText;
     private String mLeftBtnText;
     private String mRightBtnText;
@@ -76,8 +75,6 @@ public class DialogFactory {
         this.mLayoutHeight = builder.mLayoutHeight;
         this.mHoffset = builder.mHoffset;
         this.mVoffset = builder.mVoffset;
-        this.mShowNoTips = builder.mShowNoTips;
-        this.mIgnoreText = builder.mIgnoreText;
         this.mThemeResId = builder.mThemeResId;
         this.mCancelable = builder.mCancelable;
         this.mCanceledOnTouchOutside = builder.mCanceledOnTouchOutside;
@@ -143,18 +140,13 @@ public class DialogFactory {
 
         tvContent.setVisibility(View.GONE);
         etInput.setVisibility(View.GONE);
-        cbNoTips.setVisibility(View.GONE);
+
         if (mMessage != null) {
             tvContent.setVisibility(View.VISIBLE);
             tvContent.setText(mMessage);
         } else {
             etInput.setVisibility(View.VISIBLE);
         }
-        if (mShowNoTips) {
-            cbNoTips.setText(mIgnoreText);
-            cbNoTips.setVisibility(View.VISIBLE);
-        }
-
     }
 
     private void setListener() {
@@ -231,12 +223,7 @@ public class DialogFactory {
         return etInput.getText().toString().trim();
     }
 
-    /**
-     * 返回 不再提示是否选中
-     */
-    public boolean isIgnoreChecked() {
-        return cbNoTips.isChecked();
-    }
+
 
     /**
      * Builder
@@ -251,8 +238,7 @@ public class DialogFactory {
         private View mContentView;
         private int mThemeResId = R.style.Dialog_Base; //默认主题
         private int mGravity = Gravity.CENTER; //默认居中
-        private boolean mShowNoTips = false;// 是否需要显示  不再提示的选项 默认不提示
-        private String mIgnoreText;
+
         private int mLayoutWidth = ViewGroup.LayoutParams.WRAP_CONTENT;
         private int mLayoutHeight = ViewGroup.LayoutParams.WRAP_CONTENT;
 
@@ -339,11 +325,6 @@ public class DialogFactory {
             return this;
         }
 
-        public Builder showNoTips(boolean showNoTips, String ignoreText) {
-            this.mShowNoTips = showNoTips;
-            this.mIgnoreText = ignoreText;
-            return this;
-        }
 
         public Builder setCancelable(boolean cancelable) {
             this.mCancelable = cancelable;
